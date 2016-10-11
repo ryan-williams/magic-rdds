@@ -1,0 +1,3 @@
+fsqio.pants.contrib.buildgen.core==1.1.0
+fsqio.pants.contrib.buildgen.jvm==1.1.0
+fsqio.pants.contrib.buildgen.python==1.1.0
