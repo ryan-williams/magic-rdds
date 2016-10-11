@@ -1,8 +1,6 @@
 package org.hammerlab.magic.stats
 
-import org.scalatest.{FunSuite, Matchers}
-import spire.implicits._
-import spire.math.Integral
+import org.hammerlab.magic.test.Suite
 
 import scala.util.Random
 import scala.util.Random.shuffle
@@ -10,7 +8,7 @@ import scala.util.Random.shuffle
 /**
  * Test constructing [[Stats]] instances.
  */
-class StatsSuite extends FunSuite with Matchers {
+class StatsSuite extends Suite {
 
   Random.setSeed(123L)
 

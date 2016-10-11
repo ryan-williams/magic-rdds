@@ -1,8 +1,8 @@
 package org.hammerlab.magic.rdd.sliding
 
 import org.apache.spark.rdd.RDD
+import org.hammerlab.magic.rdd.partitioning.KeyPartitioner
 import org.hammerlab.magic.rdd.zip.ZipPartitionsWithIndexRDD._
-import org.hammerlab.magic.rdd.KeyPartitioner
 
 import scala.reflect.ClassTag
 

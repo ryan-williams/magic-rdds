@@ -1,0 +1,9 @@
+scala_library(
+  name='zip',
+  dependencies=[
+    '3rdparty:spark-core',
+    'src/main/scala/org/apache/spark/context',
+    'src/main/scala/org/apache/spark/zip',
+  ],
+  sources=globs('*.scala'),
+)

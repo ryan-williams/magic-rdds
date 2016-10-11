@@ -1,7 +1,7 @@
 package org.hammerlab.magic.rdd.keyed
 
 import org.apache.spark.rdd.{PartitionPruningRDD, RDD}
-import org.hammerlab.magic.rdd.KeyPartitioner
+import org.hammerlab.magic.rdd.partitioning.KeyPartitioner
 
 import scala.reflect.ClassTag
 

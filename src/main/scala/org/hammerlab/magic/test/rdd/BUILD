@@ -1,0 +1,11 @@
+scala_library(
+  name='rdd',
+  dependencies=[
+    '3rdparty:hadoop',
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/rdd/partitioning',
+    'src/main/scala/org/hammerlab/magic/rdd/serde',
+    'src/main/scala/org/hammerlab/magic/test/spark',
+  ],
+  sources=globs('*.scala'),
+)

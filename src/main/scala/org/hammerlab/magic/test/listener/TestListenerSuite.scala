@@ -2,8 +2,8 @@ package org.hammerlab.magic.test.listener
 
 import org.apache.spark.SparkConf
 import org.hammerlab.magic.test.spark.PerCaseSparkContext
-import org.scalatest.Suite
 import org.apache.spark.SparkContext
+import org.hammerlab.magic.test.Suite
 
 /**
  * Test mix-in that enforces per-case [[SparkContext]]s with [[TestSparkListener]]s attached.

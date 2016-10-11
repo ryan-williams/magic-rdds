@@ -1,0 +1,10 @@
+scala_library(
+  name='keyed',
+  dependencies=[
+    '3rdparty:kryo',
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/math',
+    'src/main/scala/org/hammerlab/magic/rdd/partitioning',
+  ],
+  sources=globs('*.scala'),
+)

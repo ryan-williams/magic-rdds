@@ -1,0 +1,9 @@
+scala_library(
+  name='test',
+  dependencies=[
+    '3rdparty:junit',
+    '3rdparty:scalatest',
+    '3rdparty:spark-core',
+  ],
+  sources=globs('*.scala'),
+)

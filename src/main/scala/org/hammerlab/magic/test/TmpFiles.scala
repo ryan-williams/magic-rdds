@@ -4,7 +4,8 @@ import java.io.File
 import java.nio.file.{Files, Paths}
 
 import org.apache.commons.io.FileUtils
-import org.scalatest.{BeforeAndAfterAll, Suite}
+import org.scalatest
+import org.scalatest.BeforeAndAfterAll
 
 import scala.collection.mutable.ArrayBuffer
 
@@ -12,7 +13,7 @@ import scala.collection.mutable.ArrayBuffer
  * Mix-in for tests that allows for creating temporary files and directories, and cleans them up before exiting.
  */
 trait TmpFiles extends BeforeAndAfterAll {
-  self: Suite =>
+  self: scalatest.Suite =>
 
   val files = ArrayBuffer[String]()
   val dirs = ArrayBuffer[String]()

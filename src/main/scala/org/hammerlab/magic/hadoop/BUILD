@@ -1,0 +1,9 @@
+scala_library(
+  name='hadoop',
+  dependencies=[
+    '3rdparty:commons-io',
+    '3rdparty:hadoop',
+    '3rdparty:hadoop-mr',
+  ],
+  sources=globs('*.scala'),
+)

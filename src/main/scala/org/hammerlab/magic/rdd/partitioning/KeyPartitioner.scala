@@ -1,4 +1,4 @@
-package org.hammerlab.magic.rdd
+package org.hammerlab.magic.rdd.partitioning
 
 import org.apache.spark.Partitioner
 import org.apache.spark.rdd.RDD

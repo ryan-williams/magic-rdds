@@ -1,0 +1,9 @@
+scala_library(
+  name='grid',
+  dependencies=[
+    '3rdparty:kryo',
+    '3rdparty:spark-core',
+    '3rdparty:spire',
+  ],
+  sources=globs('*.scala'),
+)

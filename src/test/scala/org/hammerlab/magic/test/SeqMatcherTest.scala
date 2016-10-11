@@ -1,8 +1,6 @@
 package org.hammerlab.magic.test
 
-import org.scalatest.{FunSuite, Matchers}
-
-class SeqMatcherTest extends FunSuite with Matchers {
+class SeqMatcherTest extends Suite {
 
   def check[K: Ordering, V: Ordering](expected: (K, V)*)(actual: (K, V)*)(mismatchMessageRaw: String = ""): Unit = {
     val matchResult = SeqMatcher(expected).apply(actual)

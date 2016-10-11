@@ -1,0 +1,10 @@
+scala_library(
+  name='spark',
+  dependencies=[
+    '3rdparty:kryo',
+    '3rdparty:scalatest',
+    '3rdparty:spark-testing-base',
+    'src/main/scala/org/hammerlab/magic/test'
+  ],
+  sources=globs('*.scala'),
+)

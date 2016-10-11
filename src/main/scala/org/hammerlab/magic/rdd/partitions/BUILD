@@ -1,0 +1,9 @@
+scala_library(
+  name='partitions',
+  dependencies=[
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/rdd/partitioning',
+    'src/main/scala/org/hammerlab/magic/stats',
+  ],
+  sources=globs('*.scala'),
+)

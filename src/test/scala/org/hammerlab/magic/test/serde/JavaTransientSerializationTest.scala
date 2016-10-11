@@ -2,8 +2,8 @@ package org.hammerlab.magic.test.serde
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream, ObjectInputStream, ObjectOutputStream}
 
+import org.hammerlab.magic.test.Suite
 import org.hammerlab.magic.test.serde.util.Foo
-import org.scalatest.{FunSuite, Matchers}
 
 case class Bar(a: Int, @transient b: Int, @transient c: Foo) {
   lazy val d: Int = a * 2
@@ -19,8 +19,7 @@ case class Bar(a: Int, @transient b: Int, @transient c: Foo) {
  * Test that verifies behavior under Java-serde of @transient and/or lazy vals.
  */
 class JavaTransientSerializationTest
-  extends FunSuite
-    with Matchers {
+  extends Suite {
 
   test("simple") {
     val baos = new ByteArrayOutputStream()

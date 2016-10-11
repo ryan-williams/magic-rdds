@@ -1,0 +1,9 @@
+scala_library(
+  name='math',
+  dependencies=[
+    '3rdparty:commons-math',
+    '3rdparty:spire',
+    'src/main/scala/org/hammerlab/magic/iterator',
+  ],
+  sources=globs('*.scala'),
+)

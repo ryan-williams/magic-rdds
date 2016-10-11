@@ -1,8 +1,8 @@
 package org.hammerlab.magic.iterator
 
-import org.scalatest.{FunSuite, Matchers}
+import org.hammerlab.magic.test.Suite
 
-class Sliding3OptIteratorTest extends FunSuite with Matchers {
+class Sliding3OptIteratorTest extends Suite {
 
   def slidingList[T](elems: T*): List[(Option[T], T, Option[T])] =
     Sliding3OptIterator(Iterator(elems: _*).buffered).toList

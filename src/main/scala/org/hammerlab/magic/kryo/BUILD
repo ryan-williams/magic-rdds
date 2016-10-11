@@ -1,0 +1,13 @@
+scala_library(
+  name='kryo',
+  dependencies=[
+    '3rdparty:kryo',
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/rdd',
+    'src/main/scala/org/hammerlab/magic/rdd/grid',
+    'src/main/scala/org/hammerlab/magic/rdd/keyed',
+    'src/main/scala/org/hammerlab/magic/rdd/partitions',
+    'src/main/scala/org/hammerlab/magic/rdd/sliding',
+  ],
+  sources=globs('*.scala'),
+)

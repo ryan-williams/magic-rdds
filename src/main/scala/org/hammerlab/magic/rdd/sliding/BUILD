@@ -1,0 +1,10 @@
+scala_library(
+  name='sliding',
+  dependencies=[
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/iterator',
+    'src/main/scala/org/hammerlab/magic/rdd/partitioning',
+    'src/main/scala/org/hammerlab/magic/rdd/zip',
+  ],
+  sources=globs('*.scala'),
+)

@@ -2,7 +2,7 @@ package org.hammerlab.magic.test.rdd
 
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
-import org.hammerlab.magic.rdd.KeyPartitioner
+import org.hammerlab.magic.rdd.partitioning.KeyPartitioner
 
 import scala.reflect.ClassTag
 

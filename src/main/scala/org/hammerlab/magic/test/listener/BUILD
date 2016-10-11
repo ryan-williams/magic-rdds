@@ -1,0 +1,10 @@
+scala_library(
+  name='listener',
+  dependencies=[
+    '3rdparty:scalatest',
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/test/listener/metrics',
+    'src/main/scala/org/hammerlab/magic/test/spark',
+  ],
+  sources=globs('*.scala'),
+)

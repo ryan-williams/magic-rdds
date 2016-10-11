@@ -1,1 +1,7 @@
 target
+.cache
+.pants.d
+.pants*
+.pids
+modules.txt
+dist

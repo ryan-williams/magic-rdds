@@ -3,7 +3,8 @@ package org.hammerlab.magic.test.spark
 import java.util.Date
 
 import org.apache.spark.{SparkConf, SparkContext}
-import org.scalatest.{BeforeAndAfterEach, Suite}
+import org.hammerlab.magic.test.Suite
+import org.scalatest.BeforeAndAfterEach
 
 trait PerCaseSparkContext
   extends BeforeAndAfterEach {
@@ -28,6 +29,9 @@ trait PerCaseSparkContext
         .setAppName(this.getClass.getSimpleName)
         .set("spark.ui.enabled", "false")
         .set("spark.app.id", appID)
+        .set("spark.driver.allowMultipleContexts", "true")
+        .set("spark.driver.host", "localhost")
+        .set("spark.testing", "1")
 
     // Opportunity for subclasses to set/override configs.
     setConfigs(conf)

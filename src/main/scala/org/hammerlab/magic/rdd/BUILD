@@ -1,0 +1,10 @@
+scala_library(
+  name='rdd',
+  dependencies=[
+    '3rdparty:kryo',
+    '3rdparty:spark-core',
+    'src/main/scala/org/hammerlab/magic/iterator',
+    'src/main/scala/org/hammerlab/magic/rdd/sliding',
+  ],
+  sources=globs('*.scala'),
+)

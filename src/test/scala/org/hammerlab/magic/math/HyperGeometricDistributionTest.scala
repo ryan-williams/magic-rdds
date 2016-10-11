@@ -1,15 +1,13 @@
 package org.hammerlab.magic.math
 
-import org.scalactic.Equality
-import org.scalatest.{FunSuite, Matchers}
-
 import org.apache.commons.math3.distribution.{HypergeometricDistribution => ApacheHyperGeometricDistribution}
+import org.hammerlab.magic.test.Suite
+import org.scalactic.Equality
 
 import scala.collection.mutable.ArrayBuffer
 
 class HyperGeometricDistributionTest
-  extends FunSuite
-    with Matchers {
+  extends Suite {
 
   var epsilon = 0.00001
 
