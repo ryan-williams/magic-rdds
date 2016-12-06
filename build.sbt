@@ -12,3 +12,5 @@ libraryDependencies ++= Seq(
 providedDeps += libraries.value('spark)
 
 testDeps += libraries.value('spark_tests)
+
+scalacOptions += "-Yrangepos"
